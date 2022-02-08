@@ -1,2 +1,2 @@
 # Calculator-
-Calculator By JS 
+WEB Calculator 
