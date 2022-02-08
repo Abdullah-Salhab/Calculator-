@@ -1,0 +1,57 @@
+<!---
+At this page I will make calculater 
+The programmer is : Abdullah Salhab 
+The first day in : 3/6/2020  It is take time : 2 hours
+The second day in: 4/6/2020  It is take time : 1 hour
+-->
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1 >Calculater</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4"><input id="myinput" type="text" onkeyup="MakeEnter(event)"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><button class="buttons on"  onclick="turnon_off()">OFF</button></th>
+                <th><button class="buttons ac" onclick="clears()">AC</button></th>
+                <th><button class="buttons mod" onclick="add('%')">%</button></th>
+                <th><button class="buttons divid" onclick="add('/')">/</button></th>
+            </tr>
+            <tr>
+                <th><button class="buttons seven" onclick="add(7)">7</button></th>
+                <th><button class="buttons eight" onclick="add(8)">8</button></th>
+                <th><button class="buttons nine" onclick="add(9)">9</button></th>
+                <th><button class="buttons pls" onclick="add('+')">+</button></th>
+            </tr>
+            <tr>
+                <th><button class="buttons four" onclick="add(4)">4</button></th>
+                <th><button class="buttons five" onclick="add(5)">5</button></th>
+                <th><button class="buttons six" onclick="add(6)">6</button></th>
+                <th><button class="buttons minus" onclick="add('-')">-</button></th>
+            </tr>
+            <tr>
+                <th><button class="buttons one" onclick="add(1)">1</button></th>
+                <th><button class="buttons two" onclick="add(2)">2</button></th>
+                <th><button class="buttons three" onclick="add(3)">3</button></th>
+                <th><button class="buttons mult" onclick="add('*')">*</button></th>
+            </tr>
+            <tr>
+                <th colspan="2" ><button class="buttons zero" onclick="add(0)">0</button></th>
+                <th><button class="buttons com" onclick="add('.')">.</button></th>
+                <th><button class=" buttons" id="button"  onclick="equal()"> = </button></th>
+            </tr>
+        </tbody>
+    </table>
+     <script src="js/main.js"></script>
+</body>
+</html>
